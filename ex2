@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class opLog {
+
+	public static void main(String[] args) {
+		
+		double a, b, resultado;
+		int op;
+		
+		Scanner sc = new Scanner(System.in);
+	
+		
+		System.out.println("\nAntes de escolher a opção, informe os numeros desejados para calcularmos:  ");
+		
+		System.out.println("\nInforme um numero para A");
+		a=sc.nextDouble();
+	    
+		System.out.println("\nInforme um numero para b");			
+		b=sc.nextDouble();
+		
+		
+		System.out.println("MENU");
+		System.out.println("\n1-)Adição");
+		System.out.println("2-)Subtração");
+		System.out.println("3-)Multiplicação");
+		System.out.println("4-)Divisão");
+		System.out.println("9-)Sair");
+		System.out.println("\nAgora escolha a opção desejada: ");
+		op= sc.nextInt();
+	
+		
+		if(op==1){			
+			resultado = a + b;
+			
+			System.out.printf("Resultado da adição: %.2f", resultado);
+		}
+		
+		if(op==2){			
+			resultado = a - b;
+			
+			System.out.printf("Resultado da subtração: %.2f", resultado);
+		}
+				
+		if(op==3){			
+			resultado = a * b;
+			
+			System.out.printf("Resultado da multiplicação: %.2f", resultado);
+		}
+		
+		if(op==4){			
+			resultado = a / b;
+			
+			System.out.printf("Resultado da subtração: %.2f", resultado);		
+		}
+		
+		if(op==9)
+		{			
+			System.exit(op); 
+		}
+		
+		sc.close();
+	}
+
+}
