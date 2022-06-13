@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class exercicio3 {
+
+	public static void main(String[] args) {
+	
+		
+	int horas, numero;
+	double salario, valorHora;
+	
+		Scanner sc= new Scanner(System.in);
+	
+		
+		System.out.println("Informe o numero do funcionario:");		
+		numero =sc.nextInt();
+		
+		System.out.println("Informe quantas horas o funcionario trabalhou:");	
+		horas =sc.nextInt();
+		
+		System.out.println("Informe o valor da hora que o funcionario recebe:");	
+		valorHora =sc.nextDouble();
+	
+		salario = valorHora* horas ;	
+		
+
+		System.out.printf("O salário do funcionario n°%d é de R$%.2f", numero, salario);
+		
+		sc.close();
+	}
+
+}
