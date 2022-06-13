@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class exercicioPeso {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+
+		double peso,altura, imc;
+		
+		System.out.println("Informe seu peso: ");
+		peso=sc.nextDouble();
+		
+		System.out.println("Informe sua altura: ");
+		altura =sc.nextDouble();
+		
+		imc= peso /(altura*altura);
+		
+		if(imc<=18.5) {
+			System.out.printf("Seu IMC é de %.2f, e você está abaixo do peso normal!", imc);
+		}
+		
+		if((imc>18.5) && (imc <= 25)){
+			System.out.printf("Seu IMC é de %.2f, e você está no peso normal!", imc);
+		}
+		
+		if((imc>25) && (imc <= 30)){
+			System.out.printf("Seu IMC é de %.2f, e você está acima do peso normal!", imc);
+		}
+		
+		if(imc> 30){
+			System.out.printf("Seu IMC é de %.2f, PESO EXCESSIVO!", imc);
+		}
+		
+		sc.close();
+	}
+
+}
