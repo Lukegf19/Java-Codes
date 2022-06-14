@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class exercicioPesoPlaneta {
+
+	public static void main(String[] args) {
+	
+		Scanner sc= new Scanner(System.in);
+		
+		double pesoTerra, pesoPlaneta = 0;
+		int planeta;
+		
+		System.out.println("Informe seu peso: ");
+		pesoTerra=sc.nextDouble();
+		
+		System.out.println("Planetas");
+		System.out.println("");
+		System.out.println("1-)Mercúrio");
+		System.out.println("2-)Vênus");
+		System.out.println("3-)Marte");
+		System.out.println("4-)Júpiter");
+		System.out.println("5-)Saturno");
+		System.out.println("6-)Urano");
+		System.out.println("");
+		System.out.println("Escolha a opção desejada");
+		planeta= sc.nextInt();
+		
+		if(planeta==1) {
+			pesoPlaneta = (pesoTerra/10)*0.37;
+			System.out.println("Você escolheu Mercúrio");
+		}
+		
+		if(planeta==2) {
+			pesoPlaneta = (pesoTerra/10)*0.88;
+			System.out.println("Você escolheu Vênus");
+		}
+		
+		if(planeta==3) {
+			pesoPlaneta = (pesoTerra/10)*0.38;
+			System.out.println("Você escolheu Marte");
+		}
+		
+		if(planeta==4) {
+			pesoPlaneta = (pesoTerra/10)*2.64;
+			System.out.println("Você escolheu Júpiter");
+		}
+		
+		if(planeta==5) {
+			pesoPlaneta = (pesoTerra/10)*1.15;
+			System.out.println("Você escolheu Saturno");
+		}
+		
+		if(planeta==6) {
+			pesoPlaneta = (pesoTerra/10)*1.17;
+			System.out.println("Você escolheu Urano");
+		}
+		
+		
+		System.out.printf("Seu peso no planeta selecionado é %.2f", pesoPlaneta);
+		sc.close();
+		
+
+	}
+
+}
